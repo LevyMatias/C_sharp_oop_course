@@ -1,0 +1,12 @@
+	Plano cartesiano:
+
+		- A região onde x e y são positivos simultaneamente é chamada de primeiro quadrante.
+		
+		- Onde y é positivo e x é negativo é conhecida como segundo quadrante.
+
+		- Onde x e y são negativos simultaneamente é chamada de terceiro quadrante.
+
+		- Quando x é positivo e y é negativo, os pontos estão localizados no quarto quadrante.
+
+
+	1 - while x ou y nao for igual a zero vai repetir a estrutura e as condicões.
