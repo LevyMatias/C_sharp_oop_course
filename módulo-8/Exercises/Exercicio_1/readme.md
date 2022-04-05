@@ -9,11 +9,11 @@ Ler os dados de um trabalhador com N contratos (N fornecido pelo usuário). Depo
 
 
 ![exercicio](
-https://github.com/LevyMatias/ImagensGithub/blob/main/img%20exercicios/C_sharp_oop_course/m%C3%B3dulo-7/Exercicio_1/Cap_2.png
+https://github.com/LevyMatias/ImagensGithub/blob/main/img%20exercicios/C_sharp_oop_course/m%C3%B3dulo-8/Exercicio_1/Cap_2.png
 )
 
 
 
 ![exercicio](
-https://github.com/LevyMatias/ImagensGithub/blob/main/img%20exercicios/C_sharp_oop_course/m%C3%B3dulo-7/Exercicio_1/Cap_1.png
+https://github.com/LevyMatias/ImagensGithub/blob/main/img%20exercicios/C_sharp_oop_course/m%C3%B3dulo-8/Exercicio_1/Cap_1.png
 )
