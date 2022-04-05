@@ -7,5 +7,5 @@
 
 
 ![exercicio](
-https://github.com/LevyMatias/ImagensGithub/blob/main/img exercicios/C_sharp_oop_course/módulo-4/areaTrianguloxey/Ex.areaTriangulo.png
+https://github.com/LevyMatias/ImagensGithub/blob/main/img%20exercicios/C_sharp_oop_course/m%C3%B3dulo-4/notaAluno/Ex.nAluno.png
 )
