@@ -22,7 +22,7 @@ namespace Xadrez_Console
                         Console.WriteLine();
                         Console.Write("Origem: ");
                         Posicao origem = Tela.LerPosicaoXadrez().ToPosicao();
-                        partida.validarPosicaoDeOrigem(origem);
+                        partida.ValidarPosicaoDeOrigem(origem);
 
                         Console.WriteLine();
                         bool[,] lancesPossiveis = partida.Tab.peca(origem).MovimentosPossiveis();
