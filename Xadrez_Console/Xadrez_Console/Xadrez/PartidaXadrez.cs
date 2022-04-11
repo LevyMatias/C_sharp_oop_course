@@ -35,9 +35,13 @@ namespace Xadrez
             Tab.ColocarPeca(new Torre(Color.Branca, Tab), new NotacaoXadrez('a', 1).ToPosicao());
             Tab.ColocarPeca(new Torre(Color.Branca, Tab), new NotacaoXadrez('h', 1).ToPosicao());
 
-            Tab.ColocarPeca(new Torre(Color.Preta, Tab), new NotacaoXadrez('h', 8).ToPosicao());
-            Tab.ColocarPeca(new Torre(Color.Preta, Tab), new NotacaoXadrez('a', 8).ToPosicao());
-            Tab.ColocarPeca(new Rei(Color.Preta, Tab), new NotacaoXadrez('e', 8).ToPosicao());
+            Tab.ColocarPeca(new Torre(Color.Branca, Tab), new NotacaoXadrez('h', 8).ToPosicao());
+            Tab.ColocarPeca(new Torre(Color.Branca, Tab), new NotacaoXadrez('a', 8).ToPosicao());
+            Tab.ColocarPeca(new Torre(Color.Branca, Tab), new NotacaoXadrez('d', 1).ToPosicao());
+            Tab.ColocarPeca(new Torre(Color.Branca, Tab), new NotacaoXadrez('d', 2).ToPosicao());
+            Tab.ColocarPeca(new Torre(Color.Branca, Tab), new NotacaoXadrez('c', 1).ToPosicao());
+            Tab.ColocarPeca(new Torre(Color.Branca, Tab), new NotacaoXadrez('c', 2).ToPosicao());
+            Tab.ColocarPeca(new Rei(Color.Branca, Tab), new NotacaoXadrez('e', 8).ToPosicao());
         }
     }
 }
