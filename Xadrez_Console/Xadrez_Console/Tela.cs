@@ -14,11 +14,22 @@ namespace Xadrez_Console
             ImprimirPecasCapturadas(partida);
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.Turno);
-            Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
-            Console.WriteLine();
-            if (partida.Xeque)
+
+            if (!partida.Terminada) 
             {
-                Console.WriteLine(" -----> XEQUE!! <------ ");
+                Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
+                Console.WriteLine();
+                if (partida.Xeque)
+                {
+                    Console.WriteLine(" -----> XEQUE!! <------ ");
+                }  
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine(" >>>>> XEQUEMATE! <<<<< ");
+                Console.WriteLine();
+                Console.WriteLine("   --> VENCEDOR: " + partida.JogadorAtual + " <--");
             }
         }
 
@@ -71,7 +82,7 @@ namespace Xadrez_Console
             Console.WriteLine();
         } 
         
-        public static void PrintTabuleiro(Tabuleiro tab, bool[,] lancesPermitidos)
+        public static void PrintTabuleiro(Tabuleiro tab, bool[,] lancesPermitidos, Peca p)
         {
             ConsoleColor original = Console.BackgroundColor;
             ConsoleColor mod = ConsoleColor.Magenta;
@@ -96,7 +107,6 @@ namespace Xadrez_Console
             }
 
             //Console.WriteLine("  a b c d e f g h");
-            Console.BackgroundColor = original;
 
             Console.WriteLine();
             for (char c = 'a'; c <= 'h'; c++)
@@ -105,8 +115,7 @@ namespace Xadrez_Console
             }
             Console.WriteLine();
 
-            
-
+            Console.BackgroundColor = original;
         }
 
         public static NotacaoXadrez LerPosicaoXadrez()
