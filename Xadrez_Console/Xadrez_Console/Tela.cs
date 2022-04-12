@@ -82,7 +82,7 @@ namespace Xadrez_Console
             Console.WriteLine();
         } 
         
-        public static void PrintTabuleiro(Tabuleiro tab, bool[,] lancesPermitidos, Peca p)
+        public static void PrintTabuleiro(Tabuleiro tab, bool[,] lancesPermitidos)
         {
             ConsoleColor original = Console.BackgroundColor;
             ConsoleColor mod = ConsoleColor.Magenta;
