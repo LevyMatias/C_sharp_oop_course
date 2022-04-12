@@ -4,7 +4,7 @@ namespace Xadrez
 {
     class Rei : Peca
     {
-        public Rei(Color cor, Tabuleiro tab) : base(cor, tab)
+        public Rei(Tabuleiro tab, Color cor) : base(cor, tab)
         {
         }
 
