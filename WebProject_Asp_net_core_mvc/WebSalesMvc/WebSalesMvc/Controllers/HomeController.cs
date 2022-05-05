@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using WebSalesMvc.Models;
+using WebSalesMvc.Models.ViewModels;
 
 namespace WebSalesMvc.Controllers
 {
