@@ -37,15 +37,19 @@ namespace WebSalesMvc
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<WebSalesMvcContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("WebSalesMvcContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("WebSalesMvcContext"), builder =>
+                        builder.MigrationsAssembly("WebSalesMvc")));
+
+            services.AddScoped<SeedingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedingService seedingService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                seedingService.Seed();
             }
             else
             {
