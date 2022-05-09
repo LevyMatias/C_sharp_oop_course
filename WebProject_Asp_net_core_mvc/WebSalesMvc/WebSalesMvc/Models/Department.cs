@@ -14,7 +14,6 @@ namespace WebSalesMvc.Models
 
         public Department(string name)
         {
-            
             Name = name;
         }
 
